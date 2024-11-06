@@ -1,0 +1,22 @@
+-----------------------------------------------------------------------------------------
+
+ISSUE1: THE ERROR: "TYPE STR DOESN'T DEFINE __ROUND__ METHOD"
+
+-----------------------------------------------------------------------------------------
+You are trying to use the round() function on userInput, which is a string (str) type. The problem is that strings do not have a __round__ method, which is why Python raises the error. The round() function is designed to work with numeric values like int or float, not strings.
+
+#########################################################################################
+
+Analogy to Help You Understand:
+Imagine you're going to a math class where the teacher asks you to round a number. The teacher says, "Please round the number I give you to the nearest whole number."
+
+Teacher's expectation: The teacher expects a number (let’s say 3.14159, which is the value of Pi), so the teacher can round it to 3.
+Your response: You, as the student, give the teacher a piece of paper with words written on it instead of a number—let’s say you hand over a note saying "three point one four".
+Teacher's reaction: The teacher doesn't know how to round the piece of paper because it's not a number! The teacher needs a numeric value to round, not text.
+In this analogy:
+
+The teacher is the round() function.
+The numeric value is what the teacher expects to work with.
+The piece of paper with words is the string (str) you gave it instead of a number.
+
+-----------------------------------------------------------------------------------------
